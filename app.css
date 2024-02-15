@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+#container {
+    overflow:auto; 
+    height: 310px;
+    background-color: rgba(62, 91, 115, 0.5);
+    border-radius: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+h4 {
+    text-align: center;
+}
+
+label {
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+input {
+    float: right;
+    width: 750px;
+    margin-right: 400px;
+    text-indent: 6px;
+    height: 23px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline-color: #f2f2f2;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+button {
+    font-family: 'Hachi Maru Pop';
+    margin-top: 2px;
+    text-align: center;
+    margin-left: 700px;
+    border: none;
+    color: white;
+    background-color: #008CBA;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    outline-style: none;
+}
+
+#memes {
+    text-align: center;
+}
+
+.meme {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+.text-top, .text-bot {
+    position: absolute;
+    text-align: center;
+    left: 25%;
+    right: 25%;
+    padding: inherit;
+    box-sizing: border-box;
+}
+
+.text-top {
+    top: 5%;
+}
+
+.text-bot {
+    bottom: 5%;
+}
+
+.meme img {
+    box-sizing: border-box;
+    margin: 15px;
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.btn {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.meme:hover img {
+    opacity: 0.3;
+}
+
+.meme:hover .btn {
+    opacity: 1;
+}
+
+.x {
+    background-color:  #008CBA;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

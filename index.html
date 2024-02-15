@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Make a meme :)</h1>
+        <h4>Fill out this form to make your meme!</h4>
+        <form id="meme-form" action="">
+            <p>
+                <label for="url">
+                    Image URL
+                </label>
+                <input type="text" name="url" id="imageURL" placeholder="https://dankmemez.com/doggo.jpg" required>
+            </p>
+            <p>
+                <label for="textTop">
+                    Text On Top
+                </label>
+                <input type="text" name="textTop" id="textTop" placeholder="(Optional) What text do you want at the top?">
+            </p>
+            <p>
+                <label for="textBot">
+                    Text On Bottom
+                </label>
+                <input type="text" name="textBot" id="textBot" placeholder="(Optional) What text do you want at the bottom?">
+            </p>
+            <button>Make Meme</button>
+        </form>
+    </div>
+    <div id="memes"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
